@@ -1,4 +1,5 @@
 import 'package:breadtalk/shop/controllers/productHoverController.dart';
+import 'package:breadtalk/shop/screens/widgets/productWidgets/featuredProductCart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,14 +11,14 @@ class FeaturedProducts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(ProductHoverController());
+  
     return ListView.builder(
       shrinkWrap: true,
       itemCount: 4,
       scrollDirection: Axis.horizontal,
       itemBuilder: (context, index) => Padding(
         padding: EdgeInsets.only(right: Sizes.lg),
-        child: const ProductWidget(),
+        child: const FeaturedProductCard(),
       ),
     );
   }

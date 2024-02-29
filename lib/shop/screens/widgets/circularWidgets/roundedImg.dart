@@ -14,7 +14,7 @@ class RoundedImage extends StatelessWidget {
       this.imgRadius = 16,
       this.imgContainerRadius = 16,
       this.imgColor,
-      this.showImgBorder=false,
+      this.showImgBorder = false,
       this.margin});
 
   final double? width;
@@ -34,8 +34,9 @@ class RoundedImage extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-            border:showImgBorder? Border.all(color: Colors.black,width: 2)
-                 :null,
+            border: showImgBorder
+                ? Border.all(color: Colors.white, width: 2)
+                : null,
             color: Colors.transparent,
             borderRadius: BorderRadius.circular(imgContainerRadius)),
         width: width,

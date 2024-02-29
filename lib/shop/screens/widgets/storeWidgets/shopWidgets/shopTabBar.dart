@@ -8,6 +8,7 @@ import '../../../../../constants/sizes.dart';
 import '../../productWidgets/productWidget.dart';
 import '../myGridView.dart';
 import '../tabBarItems.dart';
+import '../tabbarItemsVertical.dart';
 
 class ShopTabBar extends StatelessWidget {
   const ShopTabBar({super.key});
@@ -36,11 +37,14 @@ class ShopTabBar extends StatelessWidget {
               //     color: Colors.orange,
               //     border: Border.all(color: Colors.orange)),
               tabs: const [
-                Tab(child: TabBarItems(text: "Breads")),
-                Tab(child: TabBarItems(text: "Toasts")),
-                Tab(child: TabBarItems(text: "Cakes")),
-                Tab(child: TabBarItems(text: "Drinks")),
-              ]),
+                Tab(child: SizedBox(
+                 
+                  child: TabBarItemVertical(text: "Breads",image: ImageContents.bugerImg,))),
+                Tab(child: TabBarItemVertical(text: "Toasts",image:ImageContents.toastImg,)),
+                Tab(child: TabBarItemVertical(text: "Cakes",image: ImageContents.cakeImg,)),
+                Tab(child: TabBarItemVertical(text: "Drinks",image: ImageContents.drinkImg,)),
+              ]
+              ),
         ),
         Expanded(
           child: TabBarView(children: [

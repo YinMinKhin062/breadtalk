@@ -9,10 +9,10 @@ class MyGridView extends StatelessWidget {
     super.key,
     required this.itemCount,
     required this.itemBuilder,
-    this.mainAxisExtent = 180,
+    this.mainAxisExtent = 245,
     this.crossAxisCount = 2,
-    this.crossAxisSpacing = 24,
-    this.mainAxisSpacing = 24,
+    this.crossAxisSpacing = 16,
+    this.mainAxisSpacing = 16,
   });
 
   final int itemCount;

@@ -14,6 +14,7 @@ class WishlistIcon extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: RoundedContainer(
+          // showBoxShadow: true,
           width: 30,
           height: 30,
           bgColor: Colors.white,

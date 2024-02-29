@@ -10,7 +10,7 @@ class RoundedContainer extends StatelessWidget {
       this.bgColor,
       this.margin,
       this.showBoxShadow = false,
-      this.showBorder=false,
+      this.showBorder = false,
       this.padding});
 
   final BorderRadiusGeometry? borderRadius;
@@ -31,11 +31,11 @@ class RoundedContainer extends StatelessWidget {
       decoration: BoxDecoration(
           color: bgColor,
           borderRadius: borderRadius,
-          border:showBorder? Border.all(color: Colors.grey):null,
+          border: showBorder ? Border.all(color: Colors.grey) : null,
           boxShadow: showBoxShadow
               ? [
                   BoxShadow(
-                      color: Colors.grey.withOpacity(.3),
+                      color: Colors.grey.withOpacity(.5),
                       offset: const Offset(5, 5),
                       blurRadius: 10,
                       spreadRadius: 2),

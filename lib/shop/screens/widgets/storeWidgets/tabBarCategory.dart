@@ -16,11 +16,11 @@ class TabBarCategory extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.only(
-              top:Sizes.spaceBetweenSections,
-              left:Sizes.spaceBetweenSections,
-              right:Sizes.spaceBetweenSections,
-              bottom:Sizes.spaceBetweenSections,
-              ),
+              top: Sizes.defaultSpace,
+              left: Sizes.defaultSpace,
+              right: Sizes.defaultSpace,
+              bottom: Sizes.defaultSpace,
+            ),
             child: MyGridView(
               itemCount: 10,
               itemBuilder: (p0, p1) => const ProductWidget(),

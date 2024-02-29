@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:motion_tab_bar_v2/motion-tab-bar.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'shop/screens/cart.dart';
 import 'shop/screens/post.dart';
 import 'shop/screens/profile.dart';
 import 'shop/screens/store.dart';
@@ -49,13 +50,11 @@ class _NavigationMenuState extends State<NavigationMenu> {
 
 class NavigationController extends GetxController {
   Rx<int> currentIndex = 0.obs;
-  final screens = [
-    const Home(),
-    const Store(),
-    const Post(),
-    Container(
-      color: Colors.blue,
-    ),
-    const Profile(),
+  final screens = const [
+    Home(),
+    Store(),
+    Post(),
+    Cart(),
+    Profile(),
   ];
 }

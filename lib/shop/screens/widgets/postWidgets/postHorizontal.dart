@@ -22,10 +22,11 @@ class PostHorizontal extends StatelessWidget {
           onTap: () {},
           child: RoundedContainer(
             width: MediaQuery.of(context).size.width,
-            height: 130,
+            height: 140,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                //image
                 const RoundedImage(
                     width: 80,
                     height: 80,
@@ -35,24 +36,48 @@ class PostHorizontal extends StatelessWidget {
                 SizedBox(
                   width: Sizes.spaceBetween,
                 ),
+
+                //text
                 Expanded(
-                  child: Text(
-                    TxtContexts.readMoreContents,
-                    softWrap: false,
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 3,
-                    style: Theme.of(context).textTheme.bodyMedium,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      //date
+                      RoundedContainer(
+                        borderRadius: BorderRadius.circular(Sizes.sm),
+                        bgColor: Colors.orange,
+                        padding: EdgeInsets.symmetric(horizontal: Sizes.sm),
+                        child: const Text(TxtContexts.postDateTxt),
+                      ),
+                      SizedBox(
+                        height: Sizes.md,
+                      ),
+                      //post title
+                      Text(TxtContexts.postTitle,style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.w500),maxLines: 1,overflow: TextOverflow.ellipsis,),
+                      SizedBox(height: Sizes.sm,),
+                      //body
+                      Text(
+                        TxtContexts.readMoreContents,
+                        softWrap: false,
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 2,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(
                   width: Sizes.spaceBetween,
                 ),
-                IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                     Icons.keyboard_double_arrow_right,
-                     
-                    )),
+                CircleAvatar(
+                  radius: 15,
+                  backgroundColor: Colors.blueGrey,
+                  child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.arrow_forward_ios,size: 15,color: Colors.white,
+                      )),
+                ),
               ],
             ),
           ),

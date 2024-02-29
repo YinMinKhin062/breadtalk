@@ -1,10 +1,12 @@
 import 'package:breadtalk/shop/screens/widgets/postWidgets/featuredPosts.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../constants/imageContents.dart';
 import '../../constants/sizes.dart';
 import '../../constants/textContents.dart';
+import 'widgets/categoryWidgets/category.dart';
 import 'widgets/categoryWidgets/categoryListWidget.dart';
 import 'widgets/categoryWidgets/featuredCategoires.dart';
 import 'widgets/customAppBar.dart';
@@ -84,7 +86,9 @@ class Home extends StatelessWidget {
                 //featured categories' hearder
                 HeaderSection(
                   title: TxtContexts.featuredCategoriesTxt,
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const CatergoryScreen());
+                  },
                 ),
                 SizedBox(
                   height: Sizes.sm / 2,
@@ -117,7 +121,7 @@ class Home extends StatelessWidget {
                   height: Sizes.sm / 2,
                 ),
                 //featured products
-                const SizedBox(height: 180, child: FeaturedProducts()),
+                const SizedBox(height: 190, child: FeaturedProducts()),
 
                 SizedBox(
                   height: Sizes.spaceBetween,

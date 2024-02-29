@@ -12,6 +12,7 @@ class TxtContexts {
 
   static const String myAccountAppBarTxt = "My Account";
 
+  static const String postTitle="Valentines Special";
   static const String readMoreContents =
       "ချစ်ခြင်းရဲ့အရသာကို အီဆိမ့်နေအောင်ခံစားဖို့ Valentine Day မှာ ချစ်သူနဲ့အတူ BreadTalk date လေးလုပ်လိုက်ရအောင် မျက်နှာပြင်အပြည့် ချိစ်သားတင်းတင်းအိအိလေးရဲ့ ချိစ်အရသာကို အပြည့်အ၀ခံစားရမယ့် Get Cheesy လေးနဲ့ ";
 
