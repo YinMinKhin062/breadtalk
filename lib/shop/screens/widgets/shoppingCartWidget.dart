@@ -1,4 +1,6 @@
+import 'package:breadtalk/shop/screens/cart.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ShoppingCart extends StatelessWidget {
@@ -9,7 +11,9 @@ class ShoppingCart extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.to(()=>const Cart());
+            },
             icon: const Icon(
               Iconsax.shopping_bag,
               size: 22,

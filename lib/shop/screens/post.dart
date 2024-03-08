@@ -33,11 +33,19 @@ class Post extends StatelessWidget {
               child: CachedNetworkImage(
                 // height: 200,
                 imageUrl: ImageContents.newsImg,
+                progressIndicatorBuilder: (context, url, progress) => SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: Center(
+                        child: CircularProgressIndicator(
+                      value: progress.progress,
+                    ))),
+                errorWidget: (context, url, error) => const Icon(Icons.error),
                 fit: BoxFit.cover,
               )),
 
           SizedBox(
-            height: Sizes.spaceBetween,
+            height: Sizes.spaceBetween + 2,
           ),
 
           //Latest News Heading

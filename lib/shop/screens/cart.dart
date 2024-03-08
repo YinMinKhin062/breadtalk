@@ -2,12 +2,15 @@ import 'package:breadtalk/shop/screens/widgets/cartWidgets/cartItem.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
 import 'package:breadtalk/shop/screens/widgets/storeWidgets/myGridView.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../constants/sizes.dart';
+import 'widgets/cartWidgets/btmCheckOutContainer.dart';
 
 class Cart extends StatelessWidget {
   const Cart({super.key});
@@ -16,23 +19,37 @@ class Cart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.orange,
-            title: Center(
-              child: Text(
-                "My Cart",
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white,
-                    fontSize: 20),
-              ),
-            )),
+          systemOverlayStyle: const SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent, // <-- SEE HERE
+            statusBarIconBrightness:
+                Brightness.dark, //<-- For Android SEE HERE (dark icons)
+            statusBarBrightness:
+                Brightness.light, //<-- For iOS SEE HERE (dark icons)
+          ),
+          leading: IconButton(
+              onPressed: () {
+                Get.back();
+              },
+              icon: const Icon(
+                Iconsax.arrow_left,
+                color: Colors.black,
+              )),
+          backgroundColor: Colors.white,
+          title: Text(
+            "My Cart",
+            style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                fontWeight: FontWeight.w500, color: Colors.black, fontSize: 18),
+          ),
+        ),
+        bottomNavigationBar: BtmCheckoutContainer(),
         body: SingleChildScrollView(
           child: Column(
             children: [
               // Container(color: Colors.orange,height: 20,),
               Padding(
-                padding: EdgeInsets.all(Sizes.defaultSpace),
+                padding: EdgeInsets.symmetric(
+                    vertical: Sizes.spaceBetweenSections,
+                    horizontal: Sizes.spaceBetween),
                 child: ListView.separated(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),

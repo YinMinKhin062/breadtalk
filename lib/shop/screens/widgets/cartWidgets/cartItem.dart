@@ -8,6 +8,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../../../constants/sizes.dart';
 import '../circularWidgets/containerWithImgCard.dart';
+import 'quantityBtn.dart';
 
 class CartItem extends StatelessWidget {
   const CartItem({super.key});
@@ -21,8 +22,9 @@ class CartItem extends StatelessWidget {
       title: "Hawaiian Pizza",
       subtitle: "4200 MMK",
       widget: Padding(
-        padding: EdgeInsets.symmetric(horizontal:10.0),
-        child: AddRemoveBtn(),
+        padding: EdgeInsets.symmetric(horizontal:20.0),
+        // child: AddRemoveBtn(),
+        child: QuantityBtn(),
       ),
     );
     // RoundedContainer(

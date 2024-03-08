@@ -47,6 +47,28 @@ class ImageContents {
       "https://www.breadtalk.com.mm/shop/oatydeen/2020/05/7.Cures-Of-The-Golden-Flower-600x600.jpg";
 
 //post
-  static const String newsImg ="https://cdn6.aptoide.com/imgs/e/6/a/e6aa7fbf2469ab922f725abdb74b3160_fgraphic.png";
-      // "https://e7.pngegg.com/pngimages/874/24/png-clipart-product-superfood-breadtalk-breadtalk-superfood-breadtalk-thumbnail.png";
+  static const String newsImg =
+      "https://cdn6.aptoide.com/imgs/e/6/a/e6aa7fbf2469ab922f725abdb74b3160_fgraphic.png";
+  // "https://e7.pngegg.com/pngimages/874/24/png-clipart-product-superfood-breadtalk-breadtalk-superfood-breadtalk-thumbnail.png";
+
+//signin
+  static const String signIn = "assets/images/cartoon.png";
+  static const String signInLogo = "assets/images/breadtalkLogo.png";
+  static const String breadtalkIconAndTxt =
+      "assets/images/breadtalkIconAndTxt.png";
+  static const String breadtalkGif = "assets/images/breadtalkGif.gif";
+  static const String breadtalkGifforSignUp =
+      "assets/images/breadtalkSignUp.gif";
+  static const String breadtalkGifThankYou =
+      "https://media2.giphy.com/media/Xi2nOpKF2YRU8ES5q7/giphy.gif";
+
+  //product
+  static const String flame = "assets/images/flame.png";
+
+  static const String productSlider1 =
+      "https://www.breadtalk.com.mm/shop/oatydeen/2020/05/8-Spring-in-the-city-.jpg";
+  static const String productSlider2 =
+      "https://i.pinimg.com/originals/46/b5/ac/46b5aca5bf3861aea5f313dafd76c75e.jpg";
+  static const String productSlider3 =
+      "https://www.breadtalk.com.mm/shop/oatydeen/2020/05/4-Floss-450x450.jpg";
 }

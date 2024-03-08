@@ -1,7 +1,9 @@
+import 'package:breadtalk/auth/Login/signIn.dart';
 import 'package:breadtalk/constants/imageContents.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../constants/sizes.dart';
 import '../../constants/textContents.dart';
@@ -25,6 +27,26 @@ class Profile extends StatelessWidget {
                   color: Colors.orange,
                 ),
               ),
+
+              Positioned(
+                  top: 30,
+                  right: 15,
+                  child: TextButton.icon(
+                      onPressed: () {
+                        Get.to(() => const SignIn());
+                      },
+                      icon: const Icon(
+                        Icons.login,
+                        color: Colors.white,
+                        size: 18,
+                      ),
+                      label: Text(
+                        TxtContexts.login,
+                        style: Theme.of(context)
+                            .textTheme
+                            .labelLarge!
+                            .copyWith(color: Colors.white),
+                      ))),
 
               //container
               Positioned.fill(

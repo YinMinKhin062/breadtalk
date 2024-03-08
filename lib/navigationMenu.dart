@@ -32,14 +32,14 @@ class _NavigationMenuState extends State<NavigationMenu> {
             navController.currentIndex.value = index;
           });
         },
-        labels: const ['Home', 'Store', 'News', 'Cart', 'Account'],
+        labels: const ['Home', 'Store', 'News',  'Account'],
         tabBarHeight: 55,
         tabSize: 37,
         icons: const [
           Iconsax.home,
           Iconsax.shop,
           Iconsax.receipt,
-          Iconsax.shopping_cart,
+          // Iconsax.shopping_cart,
           Iconsax.user
         ],
       ),
@@ -54,7 +54,7 @@ class NavigationController extends GetxController {
     Home(),
     Store(),
     Post(),
-    Cart(),
+    
     Profile(),
   ];
 }

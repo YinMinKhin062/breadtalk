@@ -12,7 +12,7 @@ class TxtContexts {
 
   static const String myAccountAppBarTxt = "My Account";
 
-  static const String postTitle="Valentines Special";
+  static const String postTitle = "Valentines Special";
   static const String readMoreContents =
       "ချစ်ခြင်းရဲ့အရသာကို အီဆိမ့်နေအောင်ခံစားဖို့ Valentine Day မှာ ချစ်သူနဲ့အတူ BreadTalk date လေးလုပ်လိုက်ရအောင် မျက်နှာပြင်အပြည့် ချိစ်သားတင်းတင်းအိအိလေးရဲ့ ချိစ်အရသာကို အပြည့်အ၀ခံစားရမယ့် Get Cheesy လေးနဲ့ ";
 
@@ -33,4 +33,16 @@ class TxtContexts {
   static const String supportTxt = "Support";
   static const String contactUsTxt = "Contact Us";
   static const String branchesTxt = "Branches";
+
+  //login
+  static const String login = "Login";
+  static const String signIn = "Sign In";
+  static const String createAccount = "Create Account";
+
+  //product
+  static const String addToCartTxt = "Add to Cart";
+  static const String productPrice = "MMK 35000-45000";
+  static const String productTitle = "Spring In The City";
+  static const String productDetail =
+      "A mouthwatering experience of tasty bread, Carrot, Picnic Ham. Spring Onion, Egg, Egg Cream, Flosss in one bite!";
 }
