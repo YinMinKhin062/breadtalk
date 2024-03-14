@@ -1,5 +1,6 @@
 import 'package:breadtalk/auth/singup/signup.dart';
 import 'package:breadtalk/constants/textContents.dart';
+import 'package:breadtalk/navigationMenu.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
@@ -45,7 +46,10 @@ class LoginForm extends StatelessWidget {
         SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                //navigation page
+                Get.to(() => const NavigationMenu());
+              },
               style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
               child: const Text(
                 "Sign In",

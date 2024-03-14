@@ -15,6 +15,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       this.preferredsize = const Size.fromHeight(kToolbarHeight + 6),
       this.bottom,
       this.statusbarcolor = Colors.transparent,
+      this.statusbarIconcolor = Brightness.dark,
+      this.backArrowColor=Colors.black,
       this.actions});
 
   final List<Widget>? actions;
@@ -24,9 +26,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double padding;
   final Color bgColor;
   final Color surfaceColor;
+  final Color backArrowColor;
   final Size preferredsize;
   final PreferredSizeWidget? bottom;
   final Color statusbarcolor;
+  final Brightness statusbarIconcolor;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +41,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarColor: statusbarcolor, // <-- SEE HERE
           statusBarIconBrightness:
-              Brightness.dark, //<-- For Android SEE HERE (dark icons)
+              statusbarIconcolor, //<-- For Android SEE HERE (dark icons)
           statusBarBrightness:
               Brightness.light, //<-- For iOS SEE HERE (dark icons)
         ),
@@ -46,7 +50,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
-                onPressed: onPressed, icon: const Icon(Icons.arrow_back_ios))
+                onPressed: onPressed, icon:  Icon(Icons.arrow_back_ios,color: backArrowColor,size: Sizes.defaultSpace-4,))
             : null,
         title: title,
         actions: actions,

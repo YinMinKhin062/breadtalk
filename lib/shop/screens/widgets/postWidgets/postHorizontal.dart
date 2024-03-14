@@ -1,9 +1,11 @@
 import 'package:breadtalk/constants/imageContents.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
+import 'package:breadtalk/shop/screens/widgets/postWidgets/postDetail/postDetail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../constants/sizes.dart';
@@ -19,7 +21,9 @@ class PostHorizontal extends StatelessWidget {
     return Column(
       children: [
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Get.to(() => const PostDetail());
+          },
           child: RoundedContainer(
             width: MediaQuery.of(context).size.width,
             height: 140,
@@ -45,7 +49,7 @@ class PostHorizontal extends StatelessWidget {
                       //date
                       RoundedContainer(
                         borderRadius: BorderRadius.circular(Sizes.sm),
-                        bgColor: Colors.orange,
+                        bgColor: Colors.amber,
                         padding: EdgeInsets.symmetric(horizontal: Sizes.sm),
                         child: const Text(TxtContexts.postDateTxt),
                       ),
@@ -53,8 +57,18 @@ class PostHorizontal extends StatelessWidget {
                         height: Sizes.md,
                       ),
                       //post title
-                      Text(TxtContexts.postTitle,style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontWeight: FontWeight.w500),maxLines: 1,overflow: TextOverflow.ellipsis,),
-                      SizedBox(height: Sizes.sm,),
+                      Text(
+                        TxtContexts.postTitle,
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyLarge!
+                            .copyWith(fontWeight: FontWeight.w500),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      SizedBox(
+                        height: Sizes.sm,
+                      ),
                       //body
                       Text(
                         TxtContexts.readMoreContents,
@@ -73,9 +87,13 @@ class PostHorizontal extends StatelessWidget {
                   radius: 15,
                   backgroundColor: Colors.blueGrey,
                   child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(() => const PostDetail());
+                      },
                       icon: const Icon(
-                        Icons.arrow_forward_ios,size: 15,color: Colors.white,
+                        Icons.arrow_forward_ios,
+                        size: 15,
+                        color: Colors.white,
                       )),
                 ),
               ],

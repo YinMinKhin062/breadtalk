@@ -17,6 +17,7 @@ class ProductDetailQuantity extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          //add
           CircleAvatar(
             backgroundColor: Colors.transparent,
             radius: 18,
@@ -31,13 +32,23 @@ class ProductDetailQuantity extends StatelessWidget {
           SizedBox(
             width: Sizes.md,
           ),
+          //quantity
           const Text(
             "1",
             style: TextStyle(color: Colors.white),
           ),
+          // CircleAvatar(
+          //   radius: 15,
+          //   backgroundColor: Colors.white,
+          //   child: Text(
+          //     "1",
+          //     style: Theme.of(context).textTheme.labelLarge,
+          //   ),
+          // ),
           SizedBox(
             width: Sizes.md,
           ),
+          //remove
           CircleAvatar(
             radius: 18,
             backgroundColor: Colors.transparent,

@@ -57,6 +57,8 @@ class CatergoryScreen extends StatelessWidget {
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) => ContainerWithImgCard(
+                        width: 90,
+                        height: 90,
                         image: ImageContents.categoryImg,
                         title: "Breads",
                         subtitle: "12 items",
@@ -70,7 +72,10 @@ class CatergoryScreen extends StatelessWidget {
                   separatorBuilder: (context, index) => SizedBox(
                         height: Sizes.spaceBetween,
                       ),
-                  itemCount: 5)
+                  itemCount: 5),
+              SizedBox(
+                height: Sizes.spaceBetween,
+              )
             ],
           ),
         ),

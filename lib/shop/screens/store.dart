@@ -1,4 +1,5 @@
 import 'package:breadtalk/constants/imageContents.dart';
+import 'package:breadtalk/shop/controllers/productController.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
@@ -13,6 +14,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../constants/sizes.dart';
@@ -24,8 +26,9 @@ class Store extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final productController = Get.put(ProductController());
     return DefaultTabController(
-      length: 4,
+      length: 5,
       child: Scaffold(
           appBar: AppBar(
             systemOverlayStyle: const SystemUiOverlayStyle(
@@ -35,9 +38,11 @@ class Store extends StatelessWidget {
               statusBarBrightness:
                   Brightness.light, //<-- For iOS SEE HERE (dark icons)
             ),
-            leading: IconButton(onPressed: () {}, icon: Icon(Iconsax.sort)),
+            leading: IconButton(
+                onPressed: () => productController.filterByPrice(context),
+                icon: const Icon(Iconsax.sort)),
             title: Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          
               children: [
                 // Expanded(
                 //   child: Padding(
@@ -103,6 +108,12 @@ class Store extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 4,
                     child: const Tab(
                         child: TabBarItems(
+                            image: ImageContents.bugerImg, text: "All")),
+                  ),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width / 4,
+                    child: const Tab(
+                        child: TabBarItems(
                             image: ImageContents.bugerImg, text: "Breads")),
                   ),
                   SizedBox(
@@ -129,7 +140,8 @@ class Store extends StatelessWidget {
                 ]),
           ),
           body: TabBarView(children: [
-            TabBarCategory(),
+            const TabBarCategory(),
+            Container(),
             Container(),
             Container(),
             Container(),

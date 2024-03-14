@@ -68,7 +68,7 @@ class Home extends StatelessWidget {
                   color: Colors.orange,
                   child: Padding(
                     padding: EdgeInsets.all(Sizes.defaultSpace),
-                    child: const SearchBar(
+                    child: const searchBar(
                         text: TxtContexts.searchBoxTxt,
                         icon: Iconsax.search_normal),
                   ),

@@ -1,4 +1,3 @@
-import 'package:breadtalk/shop/controllers/productHoverController.dart';
 import 'package:breadtalk/shop/screens/widgets/productWidgets/featuredProductCart.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

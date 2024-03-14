@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../constants/sizes.dart';
 
-class SearchBar extends StatelessWidget {
-  const SearchBar({super.key, required this.text, required this.icon});
+class searchBar extends StatelessWidget {
+  const searchBar({super.key, required this.text, required this.icon});
 
   final String text;
   final IconData icon;

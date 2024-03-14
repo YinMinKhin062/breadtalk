@@ -57,7 +57,6 @@ class CategoryListWidget extends StatelessWidget {
                   //   ),
                   // ),
                 ),
-                
                 SizedBox(
                   height: Sizes.spaceBetween / 2,
                 ),

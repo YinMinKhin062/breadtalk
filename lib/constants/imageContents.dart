@@ -10,7 +10,11 @@ class ImageContents {
 
   // static const String postImg="https://scontent.frgn10-1.fna.fbcdn.net/v/t39.30808-6/426520759_450241910659960_5331732704364794348_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=ZzaDjI2J-1MAX_Kpws4&_nc_ht=scontent.frgn10-1.fna&oh=00_AfBvG0zIwKzbkvfpa8o8QSra3tVwPSxC03iUaSNv2qy9ZQ&oe=65D6BC78";
   static const String postImg =
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjaCe9QBPTWQSpMfMCZ8FpXoG-iPkutaQorQ&usqp=CAU";
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaL64v_vCa3gI7jDNw7FAvSaTvmA6xB1-iRQ&usqp=CAU";
+  // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjaCe9QBPTWQSpMfMCZ8FpXoG-iPkutaQorQ&usqp=CAU";
+
+  static const String postDetailImg =
+      "https://assets.grab.com/wp-content/uploads/sites/15/2021/12/20141403/BreadTalk.jpg";
 
   static const String carousel_img1 =
       "https://middleclass.sg/wp-content/uploads/2022/10/BreadTalk_Cover.jpg";

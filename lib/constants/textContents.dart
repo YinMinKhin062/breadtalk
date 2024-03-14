@@ -14,7 +14,8 @@ class TxtContexts {
 
   static const String postTitle = "Valentines Special";
   static const String readMoreContents =
-      "ချစ်ခြင်းရဲ့အရသာကို အီဆိမ့်နေအောင်ခံစားဖို့ Valentine Day မှာ ချစ်သူနဲ့အတူ BreadTalk date လေးလုပ်လိုက်ရအောင် မျက်နှာပြင်အပြည့် ချိစ်သားတင်းတင်းအိအိလေးရဲ့ ချိစ်အရသာကို အပြည့်အ၀ခံစားရမယ့် Get Cheesy လေးနဲ့ ";
+      "ချစ်ခြင်းရဲ့အရသာကို အီဆိမ့်နေအောင်ခံစားဖို့ Valentine Day မှာ ချစ်သူနဲ့အတူ BreadTalk date လေးလုပ်လိုက်ရအောင်..မျက်နှာပြင်အပြည့် ချိစ်သားတင်းတင်းအိအိလေးရဲ့ ချိစ်အရသာကို အပြည့်အ၀ခံစားရမယ့် Get Cheesy လေးနဲ့ ခါးဆိမ့်ချိုအီနေမယ့် ချောကလက်ကိတ်သားကို ချယ်ရီသီး topping လေးနဲ့ ဖန်တီးထားတဲ့ Black Forest Dream တို့ကို တစ်ယောက်တစ်လှည့် ခွံ့ကျွေးကြမယ်။ တစ်ယောက်က ချိုချိုမွှေးမွှေး နို့အရသာဆိမ့်ဆိမ့်လေးနဲ့ Caramel latte ကိုသောက်မယ်ဆိုရင်.. တစ်ယောက်ကတော့ လက်ဖက်စိမ်းနံ့လေးသင်းနေတဲ့ Green Tea latte လေးရဲ့ ထူးခြားတဲ့အရသာကို ခံစားကြည့်လိုက်ပေါ့..#BreadTalk #BreadTalkMyamar #CoupleDate To feel the taste of love, why don’t you make BreadTalk date with your lover at Valentine Day. Let’s treat one another Get Cheesy with full cheese taste, Black Forest Dream with chocolate cake and cherry topping. When one enjoy sweet and milk flavor Caramel Latte , another one try the special taste of Green Tea Latte.";
+  // "ချစ်ခြင်းရဲ့အရသာကို အီဆိမ့်နေအောင်ခံစားဖို့ Valentine Day မှာ ချစ်သူနဲ့အတူ BreadTalk date လေးလုပ်လိုက်ရအောင် မျက်နှာပြင်အပြည့် ချိစ်သားတင်းတင်းအိအိလေးရဲ့ ချိစ်အရသာကို အပြည့်အ၀ခံစားရမယ့် Get Cheesy လေးနဲ့ ";
 
   static const String readMoreTxt =
       "To feel the taste of love, why don’t you make BreadTalk date with your lover at Valentine Day. ";

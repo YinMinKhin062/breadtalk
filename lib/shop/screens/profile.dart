@@ -28,25 +28,26 @@ class Profile extends StatelessWidget {
                 ),
               ),
 
-              Positioned(
-                  top: 30,
-                  right: 15,
-                  child: TextButton.icon(
-                      onPressed: () {
-                        Get.to(() => const SignIn());
-                      },
-                      icon: const Icon(
-                        Icons.login,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                      label: Text(
-                        TxtContexts.login,
-                        style: Theme.of(context)
-                            .textTheme
-                            .labelLarge!
-                            .copyWith(color: Colors.white),
-                      ))),
+              //login btn
+              // Positioned(
+              //     top: 30,
+              //     right: 15,
+              //     child: TextButton.icon(
+              //         onPressed: () {
+              //           Get.to(() => const SignIn());
+              //         },
+              //         icon: const Icon(
+              //           Icons.login,
+              //           color: Colors.white,
+              //           size: 18,
+              //         ),
+              //         label: Text(
+              //           TxtContexts.login,
+              //           style: Theme.of(context)
+              //               .textTheme
+              //               .labelLarge!
+              //               .copyWith(color: Colors.white),
+              //         ))),
 
               //container
               Positioned.fill(
@@ -148,13 +149,15 @@ class Profile extends StatelessWidget {
                   height: Sizes.sm,
                 ),
 
-                //outline btn
+                // outsline btn
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: SizedBox(
                       width: double.infinity,
                       child: OutlinedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.to(() => const SignIn());
+                          },
                           child: Text(
                             "Logout",
                             style: Theme.of(context)
