@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
@@ -54,7 +55,7 @@ class Post extends StatelessWidget {
             child: Stack(
               children: [
                 Text(
-                  "Latest News",
+                  "latest news".tr,
                   style: TextStyle(
                       fontSize: 20,
                       foreground: Paint()
@@ -62,9 +63,9 @@ class Post extends StatelessWidget {
                         ..strokeWidth = 6
                         ..color = Colors.orange),
                 ),
-                const Text(
-                  TxtContexts.latestNewsTxt,
-                  style: TextStyle(
+                Text(
+                  "latest news".tr,
+                  style: const TextStyle(
                     fontSize: 20,
                     color: Colors.white,
                   ),

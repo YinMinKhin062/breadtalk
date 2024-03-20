@@ -13,8 +13,8 @@ class ContainerWithImgCard extends StatelessWidget {
       required this.image,
       required this.title,
       required this.subtitle,
-      this.width=100,
-      this.height=100,
+      this.width = 100,
+      this.height = 100,
       required this.widget});
 
   final String image;
@@ -23,7 +23,6 @@ class ContainerWithImgCard extends StatelessWidget {
   final Widget widget;
   final double width;
   final double height;
-
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +85,7 @@ class ContainerWithImgCard extends StatelessWidget {
               ],
             ),
           ),
-          widget
+          widget 
           // IconButton(
           //     onPressed: () {},
           //     icon: const Icon(

@@ -29,6 +29,7 @@ class TxtContexts {
   static const String myOrderTxt = "My Orders";
   static const String myAddressesTxt = "My Addresses";
   static const String couponsTxt = "Coupons";
+  static const String langTxt = "Language";
 
   //support
   static const String supportTxt = "Support";

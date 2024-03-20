@@ -122,12 +122,14 @@ class ProductWidget extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Add To Cart",
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .labelSmall!
-                                  .copyWith(
-                                      color: Colors.white, fontSize: 9.2)),
+                          Flexible(
+                            child: Text("add to cart".tr,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .labelSmall!
+                                    .copyWith(
+                                        color: Colors.white, fontSize: 9.2)),
+                          ),
                           Container(
                             width: 20,
                             height: 20,

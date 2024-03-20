@@ -3,6 +3,7 @@ import 'package:breadtalk/shop/screens/post.dart';
 import 'package:breadtalk/shop/screens/profile.dart';
 import 'package:breadtalk/shop/screens/store.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:motion_tab_bar_v2/motion-tab-bar.dart';
 import 'package:motion_tab_bar_v2/motion-tab-controller.dart';
@@ -41,7 +42,7 @@ class _NavigationMenuState extends State<NavigationMenu>
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: MotionTabBar(
-        initialSelectedTab: "Home",
+        initialSelectedTab: "home".tr,
         controller: _motionTabBarController,
         icons: const [
           Iconsax.home,
@@ -49,7 +50,7 @@ class _NavigationMenuState extends State<NavigationMenu>
           Iconsax.receipt,
           Iconsax.user
         ],
-        labels: const ["Home", "Store", "News", "Account"],
+        labels: ["home".tr, "store".tr, "news".tr, "account".tr],
         tabBarHeight: 55,
         tabSize: 37,
         onTabItemSelected: (index) {

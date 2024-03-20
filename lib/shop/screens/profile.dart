@@ -1,6 +1,9 @@
 import 'package:breadtalk/auth/Login/signIn.dart';
 import 'package:breadtalk/constants/imageContents.dart';
+import 'package:breadtalk/personalization/screens/MyOrder/myOrder.dart';
+import 'package:breadtalk/personalization/screens/orders/order.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
+import 'package:breadtalk/utils/localization/controller.dart/localizationController.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:get/get.dart';
@@ -14,6 +17,7 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(LocalizationController());
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -108,15 +112,17 @@ class Profile extends StatelessWidget {
                 //My Orders
                 MyListTile(
                   leadingIcon: Iconsax.bag_tick,
-                  title: TxtContexts.myOrderTxt,
+                  title: 'my orders'.tr,
                   trailingIcon: Icons.arrow_forward_ios,
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(() => const MyOrder());
+                  },
                 ),
 
                 //My Addresses
                 MyListTile(
                   leadingIcon: Iconsax.house,
-                  title: TxtContexts.myAddressesTxt,
+                  title: 'my addresses'.tr,
                   trailingIcon: Icons.arrow_forward_ios,
                   onTap: () {},
                 ),
@@ -124,15 +130,25 @@ class Profile extends StatelessWidget {
                 //Account details
                 MyListTile(
                   leadingIcon: Iconsax.ticket, //discount shape
-                  title: TxtContexts.couponsTxt,
+                  title: 'coupons'.tr,
                   trailingIcon: Icons.arrow_forward_ios,
                   onTap: () {},
+                ),
+
+                //language
+                MyListTile(
+                  leadingIcon: Iconsax.language_circle, //discount shape
+                  title: 'language'.tr,
+                  trailingIcon: Icons.arrow_forward_ios,
+                  onTap: () {
+                    controller.selectedLanguagePopUp(context);
+                  },
                 ),
 
                 //contact us
                 MyListTile(
                   leadingIcon: Icons.forum_outlined,
-                  title: TxtContexts.contactUsTxt,
+                  title: 'contact us'.tr,
                   trailingIcon: Icons.arrow_forward_ios,
                   onTap: () {},
                 ),
@@ -140,7 +156,7 @@ class Profile extends StatelessWidget {
                 //branches
                 MyListTile(
                   leadingIcon: Iconsax.building,
-                  title: TxtContexts.branchesTxt,
+                  title: 'branches'.tr,
                   trailingIcon: Icons.arrow_forward_ios,
                   onTap: () {},
                 ),
@@ -159,7 +175,7 @@ class Profile extends StatelessWidget {
                             Get.to(() => const SignIn());
                           },
                           child: Text(
-                            "Logout",
+                            "logout".tr,
                             style: Theme.of(context)
                                 .textTheme
                                 .labelLarge!

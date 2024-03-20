@@ -85,7 +85,7 @@ class Home extends StatelessWidget {
               children: [
                 //featured categories' hearder
                 HeaderSection(
-                  title: TxtContexts.featuredCategoriesTxt,
+                  title: 'featured categories'.tr,
                   onPressed: () {
                     Get.to(() => const CatergoryScreen());
                   },
@@ -114,7 +114,7 @@ class Home extends StatelessWidget {
 
                 //featured products' hearder
                 HeaderSection(
-                  title: TxtContexts.featuredProductsTxt,
+                  title: 'featured products'.tr,
                   onPressed: () {},
                 ),
                 SizedBox(
@@ -129,7 +129,7 @@ class Home extends StatelessWidget {
 
                 //featured posts' hearder
                 HeaderSection(
-                  title: TxtContexts.latestNewsTxt,
+                  title: 'latest news'.tr,
                   onPressed: () {},
                 ),
                 SizedBox(
