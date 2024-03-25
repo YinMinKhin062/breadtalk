@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-import '../../../../constants/sizes.dart';
 
 class RoundedImage extends StatelessWidget {
   const RoundedImage(

@@ -1,15 +1,9 @@
 import 'package:breadtalk/constants/imageContents.dart';
-import 'package:breadtalk/constants/textContents.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
-import 'package:breadtalk/shop/screens/widgets/postWidgets/postTitleWidget.dart';
 import 'package:breadtalk/shop/screens/widgets/storeWidgets/myGridView.dart';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -29,6 +23,7 @@ class Post extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           //Image with oval_botttom shapes
+
           ClipPath(
               clipper: OvalBottomBorderClipper(),
               child: CachedNetworkImage(

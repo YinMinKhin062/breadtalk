@@ -1,13 +1,7 @@
 import 'package:breadtalk/shop/screens/widgets/storeWidgets/tabBarCategory.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../../../../constants/imageContents.dart';
-import '../../../../../constants/sizes.dart';
-import '../../productWidgets/productWidget.dart';
-import '../myGridView.dart';
-import '../tabBarItems.dart';
 import '../tabbarItemsVertical.dart';
 
 class ShopTabBar extends StatelessWidget {
@@ -48,7 +42,7 @@ class ShopTabBar extends StatelessWidget {
         ),
         Expanded(
           child: TabBarView(children: [
-            TabBarCategory(),
+            const TabBarCategory(),
             Container(),
             Container(),
             Container(),

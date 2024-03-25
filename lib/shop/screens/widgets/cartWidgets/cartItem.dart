@@ -1,12 +1,6 @@
 import 'package:breadtalk/constants/imageContents.dart';
-import 'package:breadtalk/shop/screens/widgets/cartWidgets/addRemoveBtn.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../../../../constants/sizes.dart';
 import '../circularWidgets/containerWithImgCard.dart';
 import 'quantityBtn.dart';
 

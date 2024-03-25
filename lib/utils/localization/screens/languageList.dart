@@ -1,11 +1,8 @@
 import 'package:breadtalk/utils/localization/appConstants.dart';
 import 'package:breadtalk/utils/localization/controller.dart/localizationController.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
-import '../../../constants/sizes.dart';
 import '../model/languageModel.dart';
 
 class LanguageList extends StatelessWidget {

@@ -1,5 +1,4 @@
 import 'package:breadtalk/shop/controllers/promoSliderController.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';

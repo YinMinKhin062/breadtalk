@@ -1,15 +1,11 @@
 import 'package:breadtalk/personalization/screens/orders/widgests/orderStatusCard.dart';
-import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../constants/sizes.dart';
 import 'widgests/orderList/orderCard.dart';
-import 'widgests/orderListTile.dart';
 
 class Order extends StatelessWidget {
   const Order({super.key});

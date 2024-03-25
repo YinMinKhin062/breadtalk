@@ -1,10 +1,7 @@
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../constants/imageContents.dart';
 import '../../../../constants/sizes.dart';
 
 class ContainerWithImgCard extends StatelessWidget {

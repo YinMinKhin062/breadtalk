@@ -1,8 +1,5 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import '';
 import '../circularWidgets/roundedContainer.dart';
 
 class DetailIcon extends StatelessWidget {
@@ -27,6 +24,5 @@ class DetailIcon extends StatelessWidget {
             ),
           )),
     );
-    ;
   }
 }

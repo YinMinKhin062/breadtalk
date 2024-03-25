@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../../../constants/sizes.dart';
-import '../../../../constants/textContents.dart';
 
 class MyListTile extends StatelessWidget {
   const MyListTile(

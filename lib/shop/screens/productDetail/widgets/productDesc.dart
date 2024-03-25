@@ -1,7 +1,4 @@
-import 'package:breadtalk/shop/screens/productDetail/widgets/productRating.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:readmore/readmore.dart';
 
 import '../../../../constants/sizes.dart';

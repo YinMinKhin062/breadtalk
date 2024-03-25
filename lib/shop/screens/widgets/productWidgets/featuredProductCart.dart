@@ -1,8 +1,5 @@
 import 'package:breadtalk/shop/screens/widgets/productWidgets/discountIcon.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../../../constants/imageContents.dart';
 import '../../../../constants/sizes.dart';

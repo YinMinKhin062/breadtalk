@@ -1,8 +1,6 @@
 import 'package:breadtalk/auth/singup/signup.dart';
 import 'package:breadtalk/constants/textContents.dart';
 import 'package:breadtalk/navigationMenu.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

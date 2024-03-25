@@ -3,8 +3,6 @@ import 'package:breadtalk/constants/textContents.dart';
 import 'package:breadtalk/shop/screens/productDetail/widgets/IconwithTxt.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 

@@ -1,12 +1,8 @@
 import 'package:breadtalk/constants/imageContents.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
+import 'package:breadtalk/shop/screens/categoryDetail/categoryDetail.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
-import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -57,16 +53,18 @@ class CatergoryScreen extends StatelessWidget {
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) => ContainerWithImgCard(
-                        width: 90,
-                        height: 90,
+                        width: 70,
+                        height: 70,
                         image: ImageContents.categoryImg,
                         title: "Breads",
                         subtitle: "12 items",
                         widget: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(() => const CategoryDetail());
+                            },
                             icon: const Icon(
                               Icons.arrow_forward_ios,
-                              size: 20,
+                              size: 16,
                             )),
                       ),
                   separatorBuilder: (context, index) => SizedBox(

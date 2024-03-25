@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../../../../constants/sizes.dart';
 
 class MyGridView extends StatelessWidget {
   const MyGridView({
@@ -25,7 +22,7 @@ class MyGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       itemCount: itemCount,
       shrinkWrap: true,
       scrollDirection: Axis.vertical,

@@ -1,12 +1,5 @@
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:breadtalk/shop/screens/widgets/storeWidgets/shopWidgets/shopTabBar.dart';
-import 'package:breadtalk/shop/screens/widgets/storeWidgets/tabBarItems.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import '../../../../constants/imageContents.dart';
 import '../../../../constants/sizes.dart';
 
 class Shop extends StatelessWidget {
@@ -21,7 +14,7 @@ class Shop extends StatelessWidget {
           children: [
             Container(
               height: 200,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.orange,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(50),
@@ -49,7 +42,7 @@ class Shop extends StatelessWidget {
           ],
         ),
         SizedBox(height: Sizes.defaultSpace),
-        Expanded(child: ShopTabBar())
+        const Expanded(child: ShopTabBar())
       ],
     );
   }

@@ -49,6 +49,8 @@ dependencies:
   readmore: ^2.2.0
   flutter_custom_clippers: ^2.1.0
   flutter_native_splash: ^2.2.19
+  dropdown_button2: ^2.1.4
+  bluetooth_print: ^4.3.0
 
   
 

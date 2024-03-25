@@ -1,3 +1,4 @@
+import 'package:breadtalk/shop/screens/Post/screens/allPosts.dart';
 import 'package:breadtalk/shop/screens/widgets/postWidgets/featuredPosts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -6,9 +7,9 @@ import 'package:iconsax/iconsax.dart';
 import '../../constants/imageContents.dart';
 import '../../constants/sizes.dart';
 import '../../constants/textContents.dart';
+import 'FeaturedProductViewAll.dart/featuredProductViewAll.dart';
 import 'widgets/categoryWidgets/category.dart';
 import 'widgets/categoryWidgets/categoryListWidget.dart';
-import 'widgets/categoryWidgets/featuredCategoires.dart';
 import 'widgets/customAppBar.dart';
 import 'widgets/headerSection.dart';
 import 'widgets/productWidgets/featuredProducts.dart';
@@ -115,7 +116,9 @@ class Home extends StatelessWidget {
                 //featured products' hearder
                 HeaderSection(
                   title: 'featured products'.tr,
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const FeaturedProductViewAll());
+                  },
                 ),
                 SizedBox(
                   height: Sizes.sm / 2,
@@ -130,7 +133,9 @@ class Home extends StatelessWidget {
                 //featured posts' hearder
                 HeaderSection(
                   title: 'latest news'.tr,
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const AllPosts());
+                  },
                 ),
                 SizedBox(
                   height: Sizes.sm / 2,

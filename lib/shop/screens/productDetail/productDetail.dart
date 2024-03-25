@@ -1,20 +1,12 @@
-import 'package:breadtalk/constants/textContents.dart';
 import 'package:breadtalk/shop/screens/productDetail/widgets/btmAddToCartContainer.dart';
 import 'package:breadtalk/shop/screens/productDetail/widgets/productAttribute.dart';
 import 'package:breadtalk/shop/screens/productDetail/widgets/productDesc.dart';
 import 'package:breadtalk/shop/screens/productDetail/widgets/productDetailQuantity.dart';
 import 'package:breadtalk/shop/screens/productDetail/widgets/productRating.dart';
 import 'package:breadtalk/shop/screens/productDetail/widgets/productSlider.dart';
-import 'package:breadtalk/shop/screens/widgets/cartWidgets/btmCheckOutContainer.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:readmore/readmore.dart';
 import '../../../constants/imageContents.dart';
 import '../../../constants/sizes.dart';
-import '../widgets/promoSlider.dart';
 
 class ProductDetails extends StatelessWidget {
   const ProductDetails({super.key});

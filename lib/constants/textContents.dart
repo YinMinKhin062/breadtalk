@@ -47,4 +47,12 @@ class TxtContexts {
   static const String productTitle = "Spring In The City";
   static const String productDetail =
       "A mouthwatering experience of tasty bread, Carrot, Picnic Ham. Spring Onion, Egg, Egg Cream, Flosss in one bite!";
+
+  static const List<String> lists = [
+    "Popularity",
+    "Average Rating",
+    "Latest",
+    "Price - Low to High",
+    "Price - High to Low"
+  ];
 }

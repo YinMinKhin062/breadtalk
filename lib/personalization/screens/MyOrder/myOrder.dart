@@ -1,10 +1,8 @@
-import 'package:breadtalk/personalization/screens/MyOrder/widgets/myOrderCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../constants/sizes.dart';
 import 'widgets/myOrderLists.dart';
 
 class MyOrder extends StatelessWidget {
@@ -24,7 +22,7 @@ class MyOrder extends StatelessWidget {
                   Brightness.light, //<-- For iOS SEE HERE (dark icons)
             ),
             leading: IconButton(
-              icon: Icon(Iconsax.arrow_left),
+              icon: const Icon(Iconsax.arrow_left),
               onPressed: () => Get.back(),
             ),
             title: Text(
@@ -36,7 +34,7 @@ class MyOrder extends StatelessWidget {
             ),
             bottom: TabBar(
                 labelColor: Colors.orange,
-                labelStyle: TextStyle(fontWeight: FontWeight.w600),
+                labelStyle: const TextStyle(fontWeight: FontWeight.w600),
                 unselectedLabelColor: Colors.grey,
                 indicatorColor: Colors.orange,
                 overlayColor: MaterialStateProperty.all(Colors.transparent),

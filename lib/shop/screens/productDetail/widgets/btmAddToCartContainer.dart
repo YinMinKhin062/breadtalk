@@ -1,10 +1,9 @@
 import 'package:breadtalk/constants/textContents.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get.dart';
 
 import '../../../../constants/sizes.dart';
+import '../../cart.dart';
 
 class BtmAddToCart extends StatelessWidget {
   const BtmAddToCart({super.key});
@@ -41,7 +40,9 @@ class BtmAddToCart extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12)),
                       backgroundColor: Colors.orange),
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const Cart());
+                  },
                   child: Text(
                     TxtContexts.addToCartTxt,
                     style: Theme.of(context)

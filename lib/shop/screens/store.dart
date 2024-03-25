@@ -1,25 +1,13 @@
 import 'package:breadtalk/constants/imageContents.dart';
 import 'package:breadtalk/shop/controllers/productController.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
-import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
-import 'package:breadtalk/shop/screens/widgets/productWidgets/productWidget.dart';
 import 'package:breadtalk/shop/screens/widgets/shoppingCartWidget.dart';
 import 'package:breadtalk/shop/screens/widgets/storeWidgets/tabBarCategory.dart';
 
 import 'package:breadtalk/shop/screens/widgets/storeWidgets/tabBarItems.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-
-import '../../constants/sizes.dart';
-import 'widgets/storeWidgets/myGridView.dart';
-import 'widgets/storeWidgets/shopWidgets/shopTabBar.dart';
 
 class Store extends StatelessWidget {
   const Store({super.key});
@@ -42,7 +30,6 @@ class Store extends StatelessWidget {
                 onPressed: () => productController.filterByPrice(context),
                 icon: const Icon(Iconsax.sort)),
             title: Row(
-          
               children: [
                 // Expanded(
                 //   child: Padding(

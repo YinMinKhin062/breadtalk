@@ -1,12 +1,7 @@
-import 'package:breadtalk/constants/textContents.dart';
 import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
 import 'package:breadtalk/shop/screens/widgets/postWidgets/postDetail/widgets/postDetailImg.dart';
-import 'package:breadtalk/shop/screens/widgets/postWidgets/postTitleWidget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class PostDetail extends StatelessWidget {
   const PostDetail({super.key});

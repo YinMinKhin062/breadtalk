@@ -55,6 +55,8 @@ class ImageContents {
       "https://cdn6.aptoide.com/imgs/e/6/a/e6aa7fbf2469ab922f725abdb74b3160_fgraphic.png";
   // "https://e7.pngegg.com/pngimages/874/24/png-clipart-product-superfood-breadtalk-breadtalk-superfood-breadtalk-thumbnail.png";
 
+  static const String postHeaderImg = "assets/images/postHeaderImg.png";
+
 //signin
   static const String signIn = "assets/images/cartoon.png";
   static const String signInLogo = "assets/images/breadtalkLogo.png";
@@ -75,4 +77,9 @@ class ImageContents {
       "https://i.pinimg.com/originals/46/b5/ac/46b5aca5bf3861aea5f313dafd76c75e.jpg";
   static const String productSlider3 =
       "https://www.breadtalk.com.mm/shop/oatydeen/2020/05/4-Floss-450x450.jpg";
+
+//coupons
+  static const String couponIcon =
+      "https://static.vecteezy.com/system/resources/previews/005/380/267/original/bread-talk-logo-design-template-free-vector.jpg";
+  // "https://madeinsingaporelah.com/wp-content/uploads/2022/10/breadtalk-singapore-1-for-1-promotion.jpg";
 }

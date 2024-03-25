@@ -1,10 +1,4 @@
-import 'package:breadtalk/constants/imageContents.dart';
-import 'package:breadtalk/constants/textContents.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/containerWithImgCard.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import '../../../../constants/sizes.dart';
 import '../../orders/widgests/orderList/TitleWithValueWidget.dart';

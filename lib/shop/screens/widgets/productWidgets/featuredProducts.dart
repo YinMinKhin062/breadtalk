@@ -1,9 +1,7 @@
 import 'package:breadtalk/shop/screens/widgets/productWidgets/featuredProductCart.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../../../../constants/sizes.dart';
-import 'productWidget.dart';
 
 class FeaturedProducts extends StatelessWidget {
   const FeaturedProducts({super.key});

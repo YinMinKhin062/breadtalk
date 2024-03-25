@@ -1,13 +1,9 @@
 import 'package:breadtalk/constants/imageContents.dart';
 import 'package:breadtalk/constants/textContents.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
 import 'package:breadtalk/shop/screens/widgets/listTileCard/profileCard.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../constants/sizes.dart';

@@ -1,4 +1,3 @@
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -32,7 +31,7 @@ class LocalizationController extends GetxController {
                 Center(
                   child: Container(
                     width: 70,
-                    height: 5,
+                    height: 4,
                     decoration: BoxDecoration(
                         color: Colors.blueGrey.withOpacity(.3),
                         borderRadius: BorderRadius.circular(100)),
@@ -41,10 +40,21 @@ class LocalizationController extends GetxController {
                 SizedBox(
                   height: Sizes.spaceBetween,
                 ),
-                Text(
-                  "select language".tr,
-                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                      fontWeight: FontWeight.w500, color: Colors.orange),
+                Row(
+                  children: [
+                    const Icon(
+                      Icons.translate,
+                      color: Colors.orange,
+                    ),
+                    SizedBox(
+                      width: Sizes.sm,
+                    ),
+                    Text(
+                      "select language".tr,
+                      style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                          fontWeight: FontWeight.w600, color: Colors.orange),
+                    ),
+                  ],
                 ),
                 SizedBox(
                   height: Sizes.spaceBetween,

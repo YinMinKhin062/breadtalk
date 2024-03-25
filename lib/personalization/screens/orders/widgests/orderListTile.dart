@@ -5,7 +5,6 @@ import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../constants/sizes.dart';
-import 'orderList/TitleWithValueWidget.dart';
 
 class OrderListTile extends StatelessWidget {
   const OrderListTile({super.key});

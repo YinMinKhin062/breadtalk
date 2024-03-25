@@ -1,10 +1,5 @@
 import 'package:breadtalk/shop/screens/widgets/cartWidgets/cartItem.dart';
-import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.dart';
-import 'package:breadtalk/shop/screens/widgets/customAppBar.dart';
-import 'package:breadtalk/shop/screens/widgets/storeWidgets/myGridView.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -41,7 +36,7 @@ class Cart extends StatelessWidget {
                 fontWeight: FontWeight.w500, color: Colors.black, fontSize: 18),
           ),
         ),
-        bottomNavigationBar: BtmCheckoutContainer(),
+        bottomNavigationBar: const BtmCheckoutContainer(),
         body: SingleChildScrollView(
           child: Column(
             children: [

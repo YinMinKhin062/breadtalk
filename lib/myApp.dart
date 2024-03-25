@@ -2,8 +2,6 @@ import 'package:breadtalk/navigationMenu.dart';
 import 'package:breadtalk/utils/localization/AppTranslation.dart';
 import 'package:breadtalk/utils/localization/controller.dart/localizationController.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 
 import 'utils/themes/myTheme.dart';

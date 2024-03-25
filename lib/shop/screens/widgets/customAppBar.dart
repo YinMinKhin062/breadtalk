@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:iconsax/iconsax.dart';
 
 import '../../../constants/sizes.dart';
 
@@ -16,7 +17,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       this.bottom,
       this.statusbarcolor = Colors.transparent,
       this.statusbarIconcolor = Brightness.dark,
-      this.backArrowColor=Colors.black,
+      this.backArrowColor = Colors.black,
+      this.icon = Icons.arrow_back_ios,
       this.actions});
 
   final List<Widget>? actions;
@@ -31,6 +33,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final PreferredSizeWidget? bottom;
   final Color statusbarcolor;
   final Brightness statusbarIconcolor;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +53,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
-                onPressed: onPressed, icon:  Icon(Icons.arrow_back_ios,color: backArrowColor,size: Sizes.defaultSpace-4,))
+                onPressed: onPressed,
+                icon: Icon(
+                  icon,
+                  color: backArrowColor,
+                  // size: Sizes.defaultSpace - 4,
+                ))
             : null,
         title: title,
         actions: actions,

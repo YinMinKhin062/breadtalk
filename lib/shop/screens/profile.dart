@@ -1,7 +1,7 @@
 import 'package:breadtalk/auth/Login/signIn.dart';
 import 'package:breadtalk/constants/imageContents.dart';
 import 'package:breadtalk/personalization/screens/MyOrder/myOrder.dart';
-import 'package:breadtalk/personalization/screens/orders/order.dart';
+import 'package:breadtalk/personalization/screens/coupons/coupons.dart';
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:breadtalk/utils/localization/controller.dart/localizationController.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +9,6 @@ import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../constants/sizes.dart';
-import '../../constants/textContents.dart';
 import 'widgets/listTileCard/listTile.dart';
 
 class Profile extends StatelessWidget {
@@ -127,17 +126,19 @@ class Profile extends StatelessWidget {
                   onTap: () {},
                 ),
 
-                //Account details
+                //coupon details
                 MyListTile(
                   leadingIcon: Iconsax.ticket, //discount shape
                   title: 'coupons'.tr,
                   trailingIcon: Icons.arrow_forward_ios,
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(() => const Coupons());
+                  },
                 ),
 
                 //language
                 MyListTile(
-                  leadingIcon: Iconsax.language_circle, //discount shape
+                  leadingIcon: Iconsax.translate, //discount shape
                   title: 'language'.tr,
                   trailingIcon: Icons.arrow_forward_ios,
                   onTap: () {

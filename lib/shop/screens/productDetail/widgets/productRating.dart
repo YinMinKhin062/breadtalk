@@ -1,11 +1,5 @@
-import 'package:breadtalk/constants/imageContents.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:iconsax/iconsax.dart';
 
-import '../../../../constants/sizes.dart';
 import 'IconwithTxt.dart';
 
 class ProductRating extends StatelessWidget {

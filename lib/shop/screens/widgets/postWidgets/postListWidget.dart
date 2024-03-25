@@ -1,15 +1,12 @@
 import 'package:breadtalk/constants/textContents.dart';
 import 'package:breadtalk/shop/screens/widgets/postWidgets/postDetail/postDetail.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
 import '../../../../constants/imageContents.dart';
 import '../../../../constants/sizes.dart';
 import '../circularWidgets/roundedContainer.dart';
 import '../circularWidgets/roundedImg.dart';
-import 'package:readmore/readmore.dart';
 
 class PostListWidget extends StatelessWidget {
   const PostListWidget({super.key});

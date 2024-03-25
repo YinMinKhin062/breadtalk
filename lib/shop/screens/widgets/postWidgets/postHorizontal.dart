@@ -3,10 +3,7 @@ import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedContainer.
 import 'package:breadtalk/shop/screens/widgets/circularWidgets/roundedImg.dart';
 import 'package:breadtalk/shop/screens/widgets/postWidgets/postDetail/postDetail.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../../../constants/sizes.dart';
 import '../../../../constants/textContents.dart';
