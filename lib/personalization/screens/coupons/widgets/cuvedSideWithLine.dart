@@ -24,6 +24,7 @@ class CurvedSideWithLine extends StatelessWidget {
                       bottomRight: Radius.circular(10)))),
         ),
 
+        //dotted line
         Expanded(child: LayoutBuilder(
             builder: (BuildContext context, BoxConstraints constraints) {
           return Padding(

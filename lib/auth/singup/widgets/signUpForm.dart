@@ -1,4 +1,6 @@
+import 'package:breadtalk/auth/controller/resgisterController.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../constants/sizes.dart';
@@ -8,6 +10,7 @@ class SignUpForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(registerController());
     return Form(
         child: Column(
       children: [
@@ -38,12 +41,21 @@ class SignUpForm extends StatelessWidget {
         ),
 
         //password
-        TextFormField(
-          obscureText: true,
-          decoration: const InputDecoration(
-              prefixIcon: Icon(Iconsax.password_check),
-              labelText: "Password",
-              suffixIcon: Icon(Iconsax.eye)),
+        Obx(
+          () => TextFormField(
+            obscureText: controller.isHidePassword.value,
+            decoration: InputDecoration(
+                prefixIcon: const Icon(Iconsax.password_check),
+                labelText: "Password",
+                suffixIcon: GestureDetector(
+                    onTap: () {
+                      controller.isHidePassword.value =
+                          !controller.isHidePassword.value;
+                    },
+                    child: Icon(controller.isHidePassword.value
+                        ? Iconsax.eye
+                        : Iconsax.eye_slash))),
+          ),
         ),
         SizedBox(
           height: Sizes.defaultSpace,

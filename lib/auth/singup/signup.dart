@@ -8,16 +8,21 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: const [
-            SignUpHeader(),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
-              child: SignUpForm(),
-            )
-          ],
+    return GestureDetector(
+      onTap: () {
+        FocusManager.instance.primaryFocus!.unfocus();
+      },
+      child: Scaffold(
+        body: SingleChildScrollView(
+          child: Column(
+            children: const [
+              SignUpHeader(),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 24),
+                child: SignUpForm(),
+              )
+            ],
+          ),
         ),
       ),
     );

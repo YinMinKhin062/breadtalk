@@ -173,7 +173,7 @@ class Profile extends StatelessWidget {
                       width: double.infinity,
                       child: OutlinedButton(
                           onPressed: () {
-                            Get.to(() => const SignIn());
+                            Get.offAll(const SignIn());
                           },
                           child: Text(
                             "logout".tr,
