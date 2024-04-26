@@ -62,7 +62,7 @@ class MyOrder extends StatelessWidget {
                     text: "Refunded",
                   ),
                   Tab(
-                    text: "Failded",
+                    text: "Failed",
                   ),
                   Tab(
                     text: "Draft",

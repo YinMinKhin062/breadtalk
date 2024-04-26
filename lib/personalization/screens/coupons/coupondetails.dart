@@ -28,11 +28,11 @@ class CouponDetails extends StatelessWidget {
           padding: EdgeInsets.all(Sizes.defaultSpace),
           child: Column(
             children: [
-              CouponDetailCard(),
+             const CouponDetailCard(),
               SizedBox(
                 height: Sizes.spaceBetweenSections * 1.8,
               ),
-              CloseBtn()
+             const  CloseBtn()
             ],
           )),
     );
