@@ -1,4 +1,5 @@
 import 'package:breadtalk/shop/screens/Post/screens/allPosts.dart';
+import 'package:breadtalk/shop/screens/countdown/countdown.dart';
 import 'package:breadtalk/shop/screens/widgets/postWidgets/featuredPosts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -84,7 +85,7 @@ class Home extends StatelessWidget {
             child: Column(
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                //featured categories' hearder
+                // featured categories' hearder
                 HeaderSection(
                   title: 'featured categories'.tr,
                   onPressed: () {
@@ -110,8 +111,16 @@ class Home extends StatelessWidget {
                 ]),
 
                 SizedBox(
-                  height: Sizes.spaceBetween,
+                  height: Sizes.defaultSpace,
                 ), //spacebetweenitem
+
+                //countdown
+                Countdown(
+                    deadline: DateTime.now().add(const Duration(days: 10))),
+
+                SizedBox(
+                  height: Sizes.spaceBetween,
+                ),
 
                 //featured products' hearder
                 HeaderSection(
