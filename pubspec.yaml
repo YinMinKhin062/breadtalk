@@ -40,12 +40,12 @@ dependencies:
   motion_tab_bar_v2: ^0.3.0
 
   #state management
-  get: ^4.6.5
+  get: ^4.6.6
   
   #utitlity
   iconsax: ^0.0.8
   cached_network_image: ^3.2.3
-  carousel_slider: ^4.2.1
+  carousel_slider: ^5.0.0
   readmore: ^2.2.0
   flutter_custom_clippers: ^2.1.0
   flutter_native_splash: ^2.2.19
